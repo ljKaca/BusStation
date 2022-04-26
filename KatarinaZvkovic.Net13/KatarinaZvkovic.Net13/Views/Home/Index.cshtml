@@ -1,0 +1,73 @@
+﻿@section Scripts {
+    @Scripts.Render("~/Scripts/Skripta.js")
+
+}
+
+<form class="form-horizontal hidden" style="width:650px; margin:auto; " id="registracija">
+    <h3 class="text-center"><b>Registracija korisnika</b></h3>
+    <div class="form-group" style="margin-top:20px;display:flex;justify-content:center;">
+        <label for="inputEmailregist" class="col-sm-4" style="align-self:center;">Email:</label>
+        <div class="col-sm-7" >
+            <input type="email" class="form-control" id="inputEmailregist">
+        </div>
+    </div>
+    <p id="regusernameerr" class="text-center" style="color:red;"></p>
+    <div class="form-group" style="margin-top:20px;display:flex;justify-content:center;">
+        <label for="inputPasswordreg1" class="col-sm-4" style="align-self:center;">Lozinka:</label>
+        <div class="col-sm-7">
+            <input type="password" class="form-control" id="inputPasswordreg1">
+        </div>
+    </div>
+    <p id="regpass1err" class="text-center" style="color:red;"></p>
+    <div class="form-group" style="margin-top:20px;display:flex;justify-content:center;">
+        <label for="inputPasswordreg2" class="col-sm-4" style="align-self:center;">Potvrdi Lozinku:</label>
+        <div class="col-sm-7">
+            <input type="password" class="form-control" id="inputPasswordreg2">
+        </div>
+    </div>
+    <p id="regpass2err" class="text-center" style="color:red;"></p>
+    <div class="row" style="margin-top:20px;display:flex;justify-content:center;">
+        <input type="submit" class="btn col-sm-3 btn-default" value="Registruj se" id="logbtnswitcha" style="background-color: lightpink;">
+    </div>
+    <div class="row" style="margin-top:20px;display:flex;justify-content:center;">
+        <input type="button" class="btn col-sm-3 btn-default" value="Odustajanje" id="dismisbtninput">
+    </div>
+</form>
+
+<div id="logininfo" style="width:550px;margin:auto" class="shown">
+    <h3 class="text-center"><b>Korisnik nije prijavljen na sistem</b></h3>
+    <div class="row" style="margin-top:20px;display:flex;justify-content:center;">
+        <input type="button" class="btn col-sm-3" value="Registracija" id="logbtnswitch" style="background-color: lightpink;">
+    </div>
+    <div class="row" style="margin-top:20px;display:flex;justify-content:center;">
+        <input type="button" class="btn col-sm-3 btn-default" value="Prijava"  style="background-color:lightblue;">
+    </div>
+</div>
+
+<form class="form-horizontal hidden" style="width:650px; margin:auto; " id="form1">
+    <h3 class="text-center"><b>Prijava korisnika</b></h3>
+    <div class="form-group" style="margin-top:20px;display:flex;justify-content:center;">
+        <label for="inputEmailregist" class="col-sm-4" style="align-self:center;">Email:</label>
+        <div class="col-sm-7" id="usernamelogin">
+            <input type="email" class="form-control" id="inputEmailregist">
+        </div>
+    </div>
+    <p id="regusernameerr" class="text-center" style="color:red;"></p>
+    <div class="form-group" style="margin-top:20px;display:flex;justify-content:center;">
+        <label for="inputPasswordreg1" class="col-sm-4" style="align-self:center;">Lozinka:</label>
+        <div class="col-sm-7">
+            <input type="password" class="form-control" id="inputPasswordreg1">
+        </div>
+    </div>
+    <p id="regpass1err" class="text-center" style="color:red;"></p>
+    <
+    <div class="row" style="margin-top:20px;display:flex;justify-content:center;">
+        <input type="submit" class="btn col-sm-3 btn-default" value="Prijavi se" style="background-color: lightblue;">
+    </div>
+    <div class="row" style="margin-top:20px;display:flex;justify-content:center;">
+        <input type="button" class="btn col-sm-3 btn-default" value="Odustajanje" id="dismisbtninput">
+    </div>
+</form>
+
+<div id="Putnikinfo"></div>
+
